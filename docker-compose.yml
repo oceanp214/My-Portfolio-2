@@ -3,5 +3,5 @@ services:
     image: 3453458134/my-port:latest
     container_name: my-port
     ports: 
-      - "5173:5173"
+      - "5000:5173"
     restart: always
