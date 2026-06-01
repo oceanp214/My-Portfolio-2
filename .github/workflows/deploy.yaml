@@ -1,0 +1,26 @@
+name: Deploy My Portfolio
+
+on: 
+   push:
+     branches:
+       - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: root
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /home/ubuntu/My-Portfolio-2
+            git pull
+            docker build -t portfolio .
+            docker run --name port-cont -d -p 5173:5173 portfolio:latest

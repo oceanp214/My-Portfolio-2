@@ -1,0 +1,61 @@
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+
+# Build folders
+dist
+build
+coverage
+.next
+out
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode
+.idea
+*.swp
+
+# Git
+.git
+.gitignore
+
+# Docker
+.dockerignore
+
+# Temporary files
+tmp
+temp
+*.tmp
+
+# Cache
+.cache
+.parcel-cache
+
+# Testing
+jest.config.js
+cypress/videos
+cypress/screenshots
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Uploads
+uploads
