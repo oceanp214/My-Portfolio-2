@@ -26,7 +26,7 @@ const Home = () => {
               <div className="flex justify-between pt-26">
                 <div className="flex flex-col gap-2">
                   <span className="text-lg md:text-3xl font-semibold tracking-wider hover:text-gray-400">
-                    Deepansh Vishwakarma
+                    Deepansh
                   </span>
                   <span className="text-xsm text-gray-400 tracking-wide font-semibold">
                     <span className="text-gray-300">Heyy👋👋 I am a </span>
