@@ -29,7 +29,7 @@ const Home = () => {
                     Deepansh Vishwakarma
                   </span>
                   <span className="text-xsm text-gray-400 tracking-wide font-semibold">
-                    <span className="text-gray-300">Heyy👋 I am a </span>
+                    <span className="text-gray-300">Heyy👋👋 I am a </span>
                     <TextType
                       text={[" Software Engineer", " Full stack developer"]}
                       typingSpeed={75}
